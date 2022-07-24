@@ -17,36 +17,35 @@ The installation intrusions are designed for an Ubuntu OS. For other OS you will
 
 1. Install python==3.9
 
-
-    sudo apt update
+    `sudo apt update`
     
-    sudo apt install python3.9
+    `sudo apt install python3.9`
     
-    python --version
+    `python --version`
 
 
 2. Clone the repository
 
-
     `git clone https://github.com/MiguelBarriosAlvarez/RicknMorty-Crawler.git`
 
-3. Install the virtualenv:
 
+4. Install the virtualenv:
 
-    sudo apt-get install python3-pip
+    `sudo apt-get install python3-pip`
 
-    sudo pip3 install virtualenv
+    `sudo pip3 install virtualenv`
     
-    virtualenv venv 
+    `virtualenv venv `
     
-    source venv/bin/activate
+    `source venv/bin/activate`
 
-4. Install requirements
 
-  `pip install -r requirements.txt`
+5. Install requirements
+
+    `pip install -r requirements.txt`
+
 
 5. Run the crawler
-
 
     `python3 main.py`
     
