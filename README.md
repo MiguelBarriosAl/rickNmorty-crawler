@@ -50,3 +50,11 @@ The installation intrusions are designed for an Ubuntu OS. For other OS you will
     
     `curl -X POST http://192.168.1.130:5000/v1`
 
+6. Results
+
+`{'name': 'Rick Sanchez', 'status': 'Alive', 'species': 'Human'}
+{'name': 'Morty Smith', 'status': 'Alive', 'species': 'Human'}
+{'name': 'Summer Smith', 'status': 'Alive', 'species': 'Human'}
+{'name': 'Beth Smith', 'status': 'Alive', 'species': 'Human'}
+{'name': 'Jerry Smith', 'status': 'Alive', 'species': 'Human'}`
+

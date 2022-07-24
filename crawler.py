@@ -30,7 +30,7 @@ async def task(name, work_queue):
     async with ClientSession() as session:
         while not work_queue.empty():
             url = await work_queue.get()
-            #print(f"Task {name} getting URL: {url}")
+            print(f"Task {name} getting URL: {url}")
             timer.start()
             async with session.get(url) as response:
                 resp = await response.json()
