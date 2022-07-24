@@ -1,10 +1,9 @@
-![Crawler](/home/barrios/Descargas/rick-and-morty-with-dumb-faces-5emfcjchm1juj1v9.jpg)
-
+![](/home/barrios/Documentos/pprojects/RicknMorty-Crawler/NicePng_rick-and-morty-png_30738.png)
 
 # Rick and Morty Crawler
 Api crawler and stores Rick and Morty characters in a database Elasticsearch through asynchronous tasks
 
-## **Requirements**
+# Requirements
 
 - Use this api [https://rickandmortyapi.com/](https://pokeapi.co/) to learn about where to find the Rick and Morty.
 
@@ -13,7 +12,7 @@ Api crawler and stores Rick and Morty characters in a database Elasticsearch thr
     2. Status
     3. Rick and Morty
 
-## **Installation**
+# Installation
 The installation intrusions are designed for an Ubuntu OS. For other OS you will have to change the necessary commands.
 
 1. Install python==3.9
