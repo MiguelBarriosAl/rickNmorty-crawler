@@ -1,5 +1,4 @@
-![](/home/barrios/Documentos/pprojects/RicknMorty-Crawler/NicePng_rick-and-morty-png_30738.png)
-
+![](/home/barrios/Documentos/pprojects/RicknMorty-Crawler/rickmorty.png)
 # Rick and Morty Crawler
 Api crawler and stores Rick and Morty characters in a database Elasticsearch through asynchronous tasks
 
