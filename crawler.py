@@ -19,24 +19,23 @@ async def get_details(resp):
             'status': status,
             'species': species
         }
-        return data
+        print(data)
 
 
 async def task(name, work_queue):
     """
      task() as an asynchronous function.
-    :param name: Task name
-    :param work_queue:
-    :return:
     """
     timer = Timer(text=f"Task {name} elapsed time: {{:.1f}}")
     async with ClientSession() as session:
         while not work_queue.empty():
             url = await work_queue.get()
-            print(f"Task {name} getting URL: {url}")
+            #print(f"Task {name} getting URL: {url}")
             timer.start()
             async with session.get(url) as response:
                 resp = await response.json()
+                details = await get_details(resp)
+                return details
             timer.stop()
 
 
@@ -46,14 +45,13 @@ async def main():
     """
     work_queue = asyncio.Queue()
     url_list = get_url_paginated(50)
-    print(url_list)
     for url in url_list:
         await work_queue.put(url)
     # Run the task
     with Timer(text="\nTotal elapsed time: {:.1f}"):
         await asyncio.gather(
             asyncio.create_task(task("One", work_queue)),
-            asyncio.create_task(task("Two", work_queue)),
+            asyncio.create_task(task("Two", work_queue))
         )
 
 

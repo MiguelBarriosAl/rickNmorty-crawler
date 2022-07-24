@@ -6,10 +6,15 @@ app = Flask(__name__)
 
 @app.route('/v1', methods=['POST'])
 def post():
-    crawler()
-    data = {
-        "response": "ok"
-    }
+    try:
+        crawler()
+        data = {
+            "response": "ok"
+        }
+    except Exception as e:
+        data = {
+            "response": f"Error:{e}"
+        }
     return jsonify(data)
 
 
