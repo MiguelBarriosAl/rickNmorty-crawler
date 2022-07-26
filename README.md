@@ -4,7 +4,7 @@ Api crawler and stores Rick and Morty characters in a database Elasticsearch thr
 
 # Requirements
 
-- Use this api https://rickandmortyapi.com/to learn about where to find the Rick and Morty.
+- Use this api https://rickandmortyapi.com/ to learn about where to find the Rick and Morty.
 
 - Store Character (design your own schema) and some attributes:
     1. Character name
